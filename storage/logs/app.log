@@ -9,3 +9,75 @@
 [2023-03-30 13:22:58.043]	local.info	gin/main.go:14	log init success!
 [2023-03-30 13:27:06.277]	local.info	gin/main.go:14	log init success!
 [2023-03-30 14:41:18.289]	local.info	gin/main.go:14	log init success!
+[2023-03-30 17:15:34.683]	local.info	gin/main.go:14	log init success!
+[2023-03-31 11:08:37.666]	local.info	gin/main.go:14	log init success!
+[2023-03-30 17:15:34.683]	local.info	gin/main.go:14	log init success!
+[2023-03-31 11:08:37.666]	local.info	gin/main.go:14	log init success!
+[2023-03-31 16:02:11.908]	local.info	gin/main.go:14	log init success!
+[2023-03-31 16:02:47.841]	local.info	gin/main.go:14	log init success!
+[2023-03-31 17:13:33.092]	local.info	gin/main.go:14	log init success!
+[2023-03-31 17:14:29.359]	local.info	gin/main.go:14	log init success!
+[2023-03-31 17:15:08.423]	local.info	gin/main.go:14	log init success!
+[2023-03-31 17:15:31.228]	local.info	gin/main.go:14	log init success!
+[2023-03-31 17:15:31.243]	local.error	bootstrap/db.go:51	mysql connect failed,err:	{"err": "Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)"}
+
+
+[31m2023/03/31 17:15:34 [Recovery] 2023/03/31 - 17:15:34 panic recovered:
+POST /api/auth/login HTTP/1.1
+Host: 127.0.0.1:8081
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Access-Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuc21hcnRwcm94eWNuLmNvbSIsImV4cCI6MTY4MjQ4OTY0Mywic3ViIjoyMDM4NSwiYXVkIjoid3d3LnNtYXJ0cHJveHkuY24iLCJpYXQiOjE2Nzk4OTc2NDMsImp0aSI6IjcwNzc1In0._lkdX3kp-5Xxs7gCabS5SXKoGR52YFUv7m4Va4rViAs
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 85
+Content-Type: application/json
+Cookie: __root_domain_v=.smartproxy.cn; _qddaz=QD.607877745558901; advanced-api=6dtp1npit1q6k8tfprrc04g6jm; _identity=06dff660ba802915ecb5d5c0527b55803c4a82d158850145852498fd8760ad00a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A26%3A%22%5B20385%2C1679897469%2C2592000%5D%22%3B%7D
+Origin: https://agent.smartproxy.cn
+Postman-Token: 31ac729b-ff6e-4f40-974e-43b4cfe1e0be
+Referer: https://agent.smartproxy.cn/
+Sec-Ch-Ua: "Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Windows"
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Go/src/runtime/panic.go:260 (0x76b866)
+	panicmem: panic(memoryError)
+D:/Go/src/runtime/signal_windows.go:257 (0x76b836)
+	sigpanic: panicmem()
+D:/GoWorks/pkg/mod/gorm.io/gorm@v1.24.6/gorm.go:374 (0xcccf98)
+	(*DB).getInstance: if db.clone > 0 {
+D:/GoWorks/pkg/mod/gorm.io/gorm@v1.24.6/chainable_api.go:201 (0xcc37db)
+	(*DB).Where: tx = db.getInstance()
+D:/soft/company/gin/app/services/user.go:31 (0xe5e2fe)
+	(*userService).Login: err = global.App.DB.Where("mobile = ?", params.Mobile).First(&user).Error
+D:/soft/company/gin/app/controllers/app/auth.go:18 (0xe5f658)
+	Login: if err, user := services.UserService.Login(form); err != nil {
+D:/GoWorks/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174 (0xe4bf01)
+	(*Context).Next: c.handlers[c.index](c)
+D:/GoWorks/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102 (0xe4beec)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/GoWorks/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174 (0xe4b026)
+	(*Context).Next: c.handlers[c.index](c)
+D:/GoWorks/pkg/mod/github.com/gin-gonic/gin@v1.9.0/logger.go:240 (0xe4b009)
+	LoggerWithConfig.func1: c.Next()
+D:/GoWorks/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174 (0xe4a0ea)
+	(*Context).Next: c.handlers[c.index](c)
+D:/GoWorks/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620 (0xe49d71)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/GoWorks/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576 (0xe4989c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Go/src/net/http/server.go:2936 (0xb6d435)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Go/src/net/http/server.go:1995 (0xb68951)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Go/src/runtime/asm_amd64.s:1598 (0x787ac0)
+	goexit: BYTE	$0x90	// NOP
+[0m

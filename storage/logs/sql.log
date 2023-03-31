@@ -289,3 +289,399 @@
 
 2023/03/30 14:41:38 D:/soft/company/gin/app/services/user.go:30
 [3.167ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[1.488ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.601ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ip_cc' AND table_name = 'user' AND table_type = 'BASE TABLE'
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.495ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT * FROM `user` LIMIT 1
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[1.840ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ip_cc' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.495ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.346ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ip_cc' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+
+2023/03/30 17:16:15 D:/soft/company/gin/app/services/user.go:31
+[4.461ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/30 17:16:59 D:/soft/company/gin/app/services/user.go:19
+[18.851ms] [rows:1] SELECT `id` FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/30 17:17:13 D:/soft/company/gin/app/services/user.go:31
+[0.992ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/30 17:17:27 D:/soft/company/gin/app/services/user.go:40
+[3.127ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/30 17:24:48 D:/soft/company/gin/app/services/user.go:40
+[0.591ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.799ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.327ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ip_cc' AND table_name = 'user' AND table_type = 'BASE TABLE'
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.365ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.360ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.062ms] [rows:-] SELECT * FROM `user` LIMIT 1
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.873ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ip_cc' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.533ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.224ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ip_cc' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+
+2023/03/31 11:09:45 D:/soft/company/gin/app/services/user.go:31
+[1.188ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 11:10:03 D:/soft/company/gin/app/services/user.go:41
+[0.367ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[1.488ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.601ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ip_cc' AND table_name = 'user' AND table_type = 'BASE TABLE'
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.495ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT * FROM `user` LIMIT 1
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[1.840ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ip_cc' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.495ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/30 17:15:34 D:/soft/company/gin/bootstrap/db.go:63
+[0.346ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ip_cc' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+
+2023/03/30 17:16:15 D:/soft/company/gin/app/services/user.go:31
+[4.461ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/30 17:16:59 D:/soft/company/gin/app/services/user.go:19
+[18.851ms] [rows:1] SELECT `id` FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/30 17:17:13 D:/soft/company/gin/app/services/user.go:31
+[0.992ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/30 17:17:27 D:/soft/company/gin/app/services/user.go:40
+[3.127ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/30 17:24:48 D:/soft/company/gin/app/services/user.go:40
+[0.591ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.799ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.327ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ip_cc' AND table_name = 'user' AND table_type = 'BASE TABLE'
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.365ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.360ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.062ms] [rows:-] SELECT * FROM `user` LIMIT 1
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.873ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ip_cc' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.533ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 11:08:37 D:/soft/company/gin/bootstrap/db.go:63
+[0.224ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ip_cc' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+
+2023/03/31 11:09:45 D:/soft/company/gin/app/services/user.go:31
+[1.188ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 11:10:03 D:/soft/company/gin/app/services/user.go:41
+[0.367ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:02:11 D:/soft/company/gin/bootstrap/db.go:63
+[0.566ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 16:02:11 D:/soft/company/gin/bootstrap/db.go:63
+[0.992ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 16:02:11 D:/soft/company/gin/bootstrap/db.go:63
+[0.532ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ip_cc' AND table_name = 'user' AND table_type = 'BASE TABLE'
+
+2023/03/31 16:02:11 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 16:02:11 D:/soft/company/gin/bootstrap/db.go:63
+[0.687ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 16:02:11 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT * FROM `user` LIMIT 1
+
+2023/03/31 16:02:11 D:/soft/company/gin/bootstrap/db.go:63
+[1.350ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ip_cc' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+
+2023/03/31 16:02:11 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 16:02:11 D:/soft/company/gin/bootstrap/db.go:63
+[0.504ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 16:02:11 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ip_cc' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+
+2023/03/31 16:02:47 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 16:02:47 D:/soft/company/gin/bootstrap/db.go:63
+[0.606ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 16:02:47 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ip_cc' AND table_name = 'user' AND table_type = 'BASE TABLE'
+
+2023/03/31 16:02:47 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 16:02:47 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 16:02:47 D:/soft/company/gin/bootstrap/db.go:63
+[0.514ms] [rows:-] SELECT * FROM `user` LIMIT 1
+
+2023/03/31 16:02:47 D:/soft/company/gin/bootstrap/db.go:63
+[0.543ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ip_cc' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+
+2023/03/31 16:02:47 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 16:02:47 D:/soft/company/gin/bootstrap/db.go:63
+[0.595ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 16:02:47 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ip_cc' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+
+2023/03/31 16:03:08 D:/soft/company/gin/app/services/user.go:31
+[0.551ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:03:31 D:/soft/company/gin/app/services/user.go:41
+[0.000ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:03:31 D:/soft/company/gin/app/services/user.go:41
+[0.000ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:04:54 D:/soft/company/gin/app/services/user.go:31
+[0.513ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:05:05 D:/soft/company/gin/app/services/user.go:41
+[0.549ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:05:05 D:/soft/company/gin/app/services/user.go:41
+[0.000ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:05:12 D:/soft/company/gin/app/services/user.go:41
+[0.000ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:05:13 D:/soft/company/gin/app/services/user.go:41
+[0.000ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:05:14 D:/soft/company/gin/app/services/user.go:41
+[0.000ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:06:30 D:/soft/company/gin/app/services/user.go:31
+[0.769ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:06:43 D:/soft/company/gin/app/services/user.go:31
+[0.000ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:06:57 D:/soft/company/gin/app/services/user.go:41
+[0.000ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:06:57 D:/soft/company/gin/app/services/user.go:41
+[0.639ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:07:03 D:/soft/company/gin/app/services/user.go:41
+[0.227ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:15:36 D:/soft/company/gin/app/services/user.go:31
+[1.116ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:16:01 D:/soft/company/gin/app/services/user.go:31
+[0.225ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:16:03 D:/soft/company/gin/app/services/user.go:31
+[0.666ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:16:07 D:/soft/company/gin/app/services/user.go:31
+[1.021ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:16:09 D:/soft/company/gin/app/services/user.go:31
+[0.447ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:16:24 D:/soft/company/gin/app/services/user.go:41
+[0.000ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:16:24 D:/soft/company/gin/app/services/user.go:41
+[0.637ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:16:33 D:/soft/company/gin/app/services/user.go:41
+[0.505ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:16:40 D:/soft/company/gin/app/services/user.go:41
+[0.000ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 16:16:40 D:/soft/company/gin/app/services/user.go:41
+[0.531ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 2 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 17:13:33 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 17:13:33 D:/soft/company/gin/bootstrap/db.go:63
+[0.526ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 17:13:33 D:/soft/company/gin/bootstrap/db.go:63
+[0.496ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ip_cc' AND table_name = 'user' AND table_type = 'BASE TABLE'
+
+2023/03/31 17:13:33 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 17:13:33 D:/soft/company/gin/bootstrap/db.go:63
+[0.496ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 17:13:33 D:/soft/company/gin/bootstrap/db.go:63
+[0.495ms] [rows:-] SELECT * FROM `user` LIMIT 1
+
+2023/03/31 17:13:33 D:/soft/company/gin/bootstrap/db.go:63
+[1.022ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ip_cc' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+
+2023/03/31 17:13:33 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 17:13:33 D:/soft/company/gin/bootstrap/db.go:63
+[0.334ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 17:13:33 D:/soft/company/gin/bootstrap/db.go:63
+[0.523ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ip_cc' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+
+2023/03/31 17:14:07 D:/soft/company/gin/app/services/user.go:31
+[1.364ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 17:14:29 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 17:14:29 D:/soft/company/gin/bootstrap/db.go:63
+[1.155ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 17:14:29 D:/soft/company/gin/bootstrap/db.go:63
+[0.334ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ip_cc' AND table_name = 'user' AND table_type = 'BASE TABLE'
+
+2023/03/31 17:14:29 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 17:14:29 D:/soft/company/gin/bootstrap/db.go:63
+[0.496ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 17:14:29 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT * FROM `user` LIMIT 1
+
+2023/03/31 17:14:29 D:/soft/company/gin/bootstrap/db.go:63
+[1.488ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ip_cc' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+
+2023/03/31 17:14:29 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 17:14:29 D:/soft/company/gin/bootstrap/db.go:63
+[0.668ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 17:14:29 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ip_cc' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+
+2023/03/31 17:14:46 D:/soft/company/gin/app/services/user.go:31
+[1.353ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 17:15:08 D:/soft/company/gin/bootstrap/db.go:63
+[0.494ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 17:15:08 D:/soft/company/gin/bootstrap/db.go:63
+[0.252ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 17:15:08 D:/soft/company/gin/bootstrap/db.go:63
+[0.497ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ip_cc' AND table_name = 'user' AND table_type = 'BASE TABLE'
+
+2023/03/31 17:15:08 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 17:15:08 D:/soft/company/gin/bootstrap/db.go:63
+[0.495ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 17:15:08 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:-] SELECT * FROM `user` LIMIT 1
+
+2023/03/31 17:15:08 D:/soft/company/gin/bootstrap/db.go:63
+[0.496ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ip_cc' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+
+2023/03/31 17:15:08 D:/soft/company/gin/bootstrap/db.go:63
+[0.223ms] [rows:-] SELECT DATABASE()
+
+2023/03/31 17:15:08 D:/soft/company/gin/bootstrap/db.go:63
+[0.000ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ip_cc%' ORDER BY SCHEMA_NAME='ip_cc' DESC,SCHEMA_NAME limit 1
+
+2023/03/31 17:15:08 D:/soft/company/gin/bootstrap/db.go:63
+[0.567ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ip_cc' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+
+2023/03/31 17:15:12 D:/soft/company/gin/app/services/user.go:31
+[0.452ms] [rows:1] SELECT * FROM `user` WHERE mobile = '13270702468' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/03/31 17:15:31 D:/soft/company/gin/bootstrap/db.go:47
+[error] failed to initialize database, got error Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)

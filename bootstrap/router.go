@@ -2,6 +2,7 @@ package bootstrap
 
 import (
 	"context"
+	"gin/app/middleware"
 	"gin/global"
 	"gin/routes"
 	"github.com/gin-gonic/gin"
@@ -15,7 +16,11 @@ import (
 
 // 若之后还有其它的分组路由，可以先在 routes 目录下新建一个文件，编写定义路由的方法，然后再到 bootstrap/router.go 调用注册
 func setupRouter() *gin.Engine {
-	router := gin.Default()
+	if global.App.Config.App.Env == "production" {
+		gin.SetMode(gin.ReleaseMode)
+	}
+	router := gin.New()
+	router.Use(gin.Logger(), middleware.CustomRecovery(), middleware.Cors())
 
 	// 静态资源
 	router.StaticFile("/favicon.ico", "./static/dist/favicon.ico")
