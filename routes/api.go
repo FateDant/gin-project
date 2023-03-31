@@ -2,6 +2,8 @@ package routes
 
 import (
 	"gin/app/controllers/app"
+	"gin/app/middleware"
+	"gin/app/services"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"time"
@@ -20,6 +22,12 @@ func SetApiGroupRoutes(route *gin.RouterGroup) {
 
 	route.POST("/auth/register", app.Register)
 	route.POST("/auth/login", app.Login)
+
+	authRoute := route.Group("").Use(middleware.JwtAuth(services.AppGuardName))
+	{
+		authRoute.POST("/auth/info", app.Info)
+		authRoute.POST("/auth/logout", app.Logout)
+	}
 
 	//route.POST("/user/register", func(context *gin.Context) {
 	//	var form request.Register
