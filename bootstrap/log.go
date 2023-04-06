@@ -11,8 +11,8 @@ import (
 )
 
 var (
-	level   zapcore.Level
-	options []zap.Option
+	level   zapcore.Level // zap 日志等级
+	options []zap.Option  // zap 配置项
 )
 
 func InitializeLog() *zap.Logger {
